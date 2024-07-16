@@ -17,8 +17,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap"
       rel="stylesheet" />
-      <!-- Css Link -->
-       <link rel="stylesheet" href="assets/css/household.css">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="assets/css/household.css" />
   </head>
   <body>
     <div class="container">
@@ -31,19 +31,40 @@
             <p>HOUSEHOLD INFO</p>
           </div>
           <div class="cancelIcon">
-            <i class="fa-solid fa-xmark" id="cancel_Icon" ></i>
+            <i
+              class="fa-solid fa-xmark"
+              id="cancel_Icon"
+              onclick=" goTo_Home()"></i>
           </div>
+        </div>
+        <div class="info">
+          <form action="" id="household_info_form">
+            <p>
+              How many people will be living in this home, including children?
+            </p>
+            <div class="countsButtonDiv">
+              <i class="fa-solid fa-minus" id="minus_count"></i>
+              <p id="count" value="0">1</p>
+              <i class="fa-solid fa-plus" id="add_count"></i>
+            </div>
+            <div class="validate">
+              <small id="validate_Values"
+                >Please select a value before proceeding.</small
+              >
+            </div>
+            <!-- div.submit_Container -->
+            <div class="submit">
+              <button type="submit">Next</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
-    
-
-
-
     <!-- FA Link -->
-    <script src="https://kit.fontawesome.com/a0d92fbbd6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a0d92fbbd6.js"
+      crossorigin="anonymous"></script>
     <script src="assets/js/household.js"></script>
-     
   </body>
 </html>

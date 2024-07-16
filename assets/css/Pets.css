@@ -1,0 +1,40 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+  --clr-Primary_blue: #363fbc;
+  --clr-dark: #000;
+  --clr-white: #fff;
+  --clr-semi-white: #f2f2f2;
+  --clr-gray: rgb(112, 104, 104);
+  --clr-red: #d92424;
+  --clr-semi-blue: rgb(95, 107, 216);
+}
+
+
+.Pets_Nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: var(--clr-white);
+    box-shadow: 0 0 5px var(--clr-dark);
+    z-index: 100;
+}
+
+.backIcon{
+    cursor: pointer;
+    color: var(--clr-semi-blue);
+}
+.backIcon:hover{
+    transform: translateX(-5px);
+    transition: .3s;
+}
