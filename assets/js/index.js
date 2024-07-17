@@ -65,7 +65,7 @@ personal_Form.addEventListener("submit", (event) => {
     localStorage.setItem("last_Name", last_name.value);
 
 
-    alert("Good You can now continue to the next section")
+    alert("Proceeding to the next section.......")
 
     // Redirect to the household page if all inputs are valid
     window.location.href = "Household.html";

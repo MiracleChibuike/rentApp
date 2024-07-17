@@ -1,42 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Find your perfect home with our rental application. Easily input your details to rent an apartment that suits your needs. Fast, secure, and user-friendly process. Start your rental journey with us today!" />
+    <meta
+      name="description"
+      content="Find your perfect home with our rental application. Easily input your details to rent an apartment that suits your needs. Fast, secure, and user-friendly process. Start your rental journey with us today!" />
     <title>Rental App | Octa - Household Info [Pets]</title>
-    <link rel="shortcut icon" href="assets/images/octa-design.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/octa-design.jpg"
+      type="image/x-icon" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap"
-        rel="stylesheet" />
-        <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/Pets.css">
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap"
+      rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/Pets.css" />
+  </head>
+  <body>
     <div class="container">
-       <div class="Pets_Contents">
+      <div class="Pets_Contents">
         <div class="Pets_Nav">
-            <div class="backIcon" id="back_Home">
-                <i class="fa-solid fa-angle-left"></i> Back
-            </div>
-            <div class="householdTitle">
-                <p>HOUSEHOLD INFO</p>
-            </div>
-            <div class="cancelIcon">
-                <i class="fa-solid fa-xmark" id="cancel_Icon" onclick=" goTo_Home()"></i>
-            </div>
+          <div class="backIcon" id="back_Home">
+            <i class="fa-solid fa-angle-left"></i> Back
+          </div>
+          <div class="householdTitle">
+            <p>HOUSEHOLD INFO</p>
+          </div>
+          <div class="cancelIcon">
+            <i
+              class="fa-solid fa-xmark"
+              id="cancel_Icon"
+              onclick=" HouseHold_Nav_Init()"></i>
+          </div>
         </div>
-       </div>
+        <div class="Pets_Info">
+          <div class="Info">
+            <p>How many pets will be living in this home?</p>
+          </div>
+        <form action="" id="Pets_Info_Form">
+            <div class="outputs">
+                <div class="output_Origin main_Ouput">
+                    <div class="dogs_1">
+                        <p>Small Dogs</p>
+                        <small>Weighs less than 25 lbs</small>
+                    </div>
+                    <div class="counts_1">
+                        <i class="fa-solid fa-minus" id="minus_count1"></i>
+                        <p id="count1">0</p>
+                        <i class="fa-solid fa-plus" id="add_count1"></i>
+                    </div>
+                </div>
+                <!-- Output 2 -->
+                <div class="output_Origin main_Ouput">
+                    <div class="dogs_1">
+                        <p>Medium Dogs</p>
+                        <small>Weighs 25 lbs to 50 lbs</small>
+                    </div>
+                    <div class="counts_1">
+                        <i class="fa-solid fa-minus" id="minus_count2"></i>
+                        <p id="count2">0</p>
+                        <i class="fa-solid fa-plus" id="add_count2"></i>
+                    </div>
+                </div>
+                <!-- Output 3 -->
+                <div class="output_Origin main_Ouput">
+                    <div class="dogs_1">
+                        <p>Large Dogs</p>
+                        <small>Weighs more than 50 lbs</small>
+                    </div>
+                    <div class="counts_1">
+                        <i class="fa-solid fa-minus" id="minus_count3"></i>
+                        <p id="count3">0</p>
+                        <i class="fa-solid fa-plus" id="add_count3"></i>
+                    </div>
+                </div>
+                <!-- Output 4 -->
+                <div class="output_Origin main_Ouput">
+                    <div class="dogs_1">
+                        <p>Cats</p>
+                    </div>
+                    <div class="counts_1">
+                        <i class="fa-solid fa-minus" id="minus_count4"></i>
+                        <p id="count4">0</p>
+                        <i class="fa-solid fa-plus" id="add_count4"></i>
+                    </div>
+                </div>
+                <!-- Output 5 -->
+                <div class="output_Origin main_Ouput">
+                    <div class="dogs_1">
+                        <p>Other pets</p>
+                    </div>
+                    <div class="counts_1">
+                        <i class="fa-solid fa-minus" id="minus_count5"></i>
+                        <p id="count5">0</p>
+                        <i class="fa-solid fa-plus" id="add_count5"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- div.submit_Container -->
+            <div class="submit">
+                <button type="submit">Next</button>
+            </div>
+        </form>
+        </div>
+        <!-- Put here -->
+      </div>
     </div>
-   
 
     <!-- FA Link -->
-    <script src="https://kit.fontawesome.com/a0d92fbbd6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a0d92fbbd6.js"
+      crossorigin="anonymous"></script>
     <script src="assets/js/Pets.js"></script>
-    
-</body>
+  </body>
 </html>
